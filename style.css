@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     letter-spacing: -1px;
 }
@@ -43,34 +43,32 @@ h1 {
 .role {
     color: var(--accent);
     font-weight: 600;
-    font-size: 1.1rem;
     margin-top: 5px;
 }
 
 .contact-grid {
-    display: flex;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin-top: 20px;
     font-size: 0.85rem;
     color: var(--text-dim);
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     color: var(--accent);
     margin-top: 30px;
 }
 
-.job {
-    margin-bottom: 20px;
+.item {
+    margin-bottom: 15px;
 }
 
-.job-info {
+.item-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
 }
 
 .date {
@@ -90,17 +88,10 @@ h2 {
     padding: 6px 14px;
     border-radius: 8px;
     font-size: 0.8rem;
-    font-weight: 600;
     border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
-/* Responsif untuk HP */
 @media (max-width: 600px) {
-    .job-info {
-        flex-direction: column;
-    }
-    .contact-grid {
-        flex-direction: column;
-        gap: 5px;
-    }
+    .contact-grid { grid-template-columns: 1fr; }
+    .item-info { flex-direction: column; }
 }
