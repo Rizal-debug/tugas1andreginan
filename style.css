@@ -95,3 +95,19 @@ h2 {
     .contact-grid { grid-template-columns: 1fr; }
     .item-info { flex-direction: column; }
 }
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat foto jadi bulat */
+    border: 3px solid var(--accent); /* Memberi bingkai warna biru */
+    object-fit: cover; /* Agar foto tidak gepeng */
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center; /* Memastikan foto dan nama di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
