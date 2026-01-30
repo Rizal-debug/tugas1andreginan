@@ -1,105 +1,54 @@
-:root {
-    --primary-color: #2c3e50;
-    --text-color: #333;
-    --light-grey: #f4f4f4;
-    --accent-color: #3498db;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nama Anda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-card">
+        <header>
+            <div class="profile-main">
+                <h1>NAMA LENGKAP</h1>
+                <p class="role">Data Scientist & Web Developer</p>
+            </div>
+            <div class="contact-grid">
+                <span>📍 Jakarta</span>
+                <span>📧 email@kamu.com</span>
+                <span>🔗 linkedin.com/in/username</span>
+            </div>
+        </header>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--light-grey);
-    margin: 0;
-    padding: 40px 20px;
-}
+        <main>
+            <section>
+                <h2>Tentang Saya</h2>
+                <p>Saya adalah seorang profesional yang berfokus pada solusi kreatif menggunakan teknologi terbaru. Senang belajar hal baru dan berkolaborasi dalam tim yang dinamis.</p>
+            </section>
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
+            <section>
+                <h2>Pengalaman</h2>
+                <div class="job">
+                    <div class="job-info">
+                        <strong>Software Engineer — Startup Maju Jaya</strong>
+                        <span class="date">2023 - Sekarang</span>
+                    </div>
+                    <p>Membangun sistem otomatisasi yang meningkatkan efisiensi kerja sebesar 40%.</p>
+                </div>
+            </section>
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    margin: 0;
-    letter-spacing: 2px;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-.subtitle {
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-.contact-info {
-    margin-top: 15px;
-    font-size: 0.9em;
-}
-
-.contact-info span {
-    margin: 0 10px;
-    color: #666;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 30px 0;
-}
-
-h3 {
-    text-transform: uppercase;
-    font-size: 1.1em;
-    color: var(--primary-color);
-    border-left: 4px solid var(--accent-color);
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
-
-.item {
-    margin-bottom: 20px;
-}
-
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-ul {
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills-grid span {
-    background: var(--light-grey);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 500;
-}
-
-@media (max-width: 600px) {
-    .item-header {
-        flex-direction: column;
-    }
-    .container {
-        padding: 20px;
-    }
-}
+            <section>
+                <h2>Keahlian</h2>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>React.js</span>
+                    <span>SQL</span>
+                    <span>Cloud Computing</span>
+                    <span>AI Integration</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
