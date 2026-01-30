@@ -80,3 +80,11 @@ h3 { color: var(--blue); font-size: 1rem; text-transform: uppercase; }
 @media (max-width: 480px) {
     .glass-card { padding: 20px; }
 }
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat jadi bulat */
+    border: 4px solid #38bdf8; /* Garis pinggir biru */
+    object-fit: cover; /* Agar foto tidak gepeng */
+    margin-bottom: 20px;
+}
